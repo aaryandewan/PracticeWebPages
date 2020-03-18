@@ -1,0 +1,146 @@
+<html>
+
+<head>
+    <style>
+        body {
+  background-image: url("https://media-manager.starsinsider.com/1920/na_5ce417a4cf13c.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#main-div {
+  height: auto;
+  width: 80%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  opacity: 80%;
+  padding: 20px;
+}
+
+#toptext {
+  color: Black;
+  text-align: center;
+  font-size: 50px;
+  background-color: white;
+  opacity: 80%;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#innerdiv {
+  diplay: block;
+  text-align: center;
+}
+form {
+  display: inline-block;
+  text-align: left;
+}
+label {
+  font-size: 30px;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+}
+
+input {
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 25px;
+  width: 70%;
+  outline: none;
+}
+
+#favchar {
+  height: 40px;
+}
+
+option {
+  font-size: 20px;
+}
+
+#textt {
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: "Indie Flower", cursive;
+}
+
+input[type="radio"] {
+  width: 5%;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid gray;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="radio"]:focus {
+  width: 10%;
+}
+
+input:focus {
+  width: 100%;
+  border: 3px solid black;
+  font-size: 25px;
+}
+
+select {
+  border: 2px solid black;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  outline: none;
+}
+
+input[type="radio"] {
+  border: 0px;
+  height: 20px;
+}
+
+#textt{
+    font-weight: bold;
+}
+
+    </style>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id=toptext>GOT Survey Form</div>
+  <div id=main-div>
+    <div id=innerdiv>
+      <form autocomplete="off">
+        <label for="name">Full Name</label><br>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Your email address</label><br>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="seasons">How many seasons have you seen?</label><br>
+        <input type="number" id="seasons" name="seasons"><br>
+        <label for="favchar">Who is your favourite character?</label><br>
+        <select id="favchar" name="favchar">
+          <option value="jsnow">John Snow</option>
+          <option value="cersei">Cersei</option>
+          <option value="Daenerys">Daenerys Targaryen
+          </option>
+          <option value="tyrion">Tryion Lannister</option>
+          <option value="brienne">Brienne of Tarth</option>
+          <option value="baeish">Lord Baelish</option>
+          <option value="other">Other</option>
+        </select><br>
+        <div id=textt>Are you justified with the ending of GOT?</div>
+        <input type="radio" id="yes/no" name="abc"><label for="yes/no">Yes</label><br>
+        <input type="radio" id="yes/no" name="abc"><label for="yes/no">No</label><br>
+        <input type="radio" id="yes/no" name="abc"><label for="yes/no">Maybe</label>
+
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>
