@@ -1,0 +1,123 @@
+#nav{
+	background-color: transparent;
+	height:9%;
+	width:100%;
+}
+
+body{
+	margin:0;
+	background-image:url('Photos/img3.jpg');
+
+    
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;            
+}
+
+#innerNav{
+	width:40%;
+	height:100%;
+	background-color: transparent;
+	margin-left: auto;
+	display: flex;
+	color:red;
+
+}
+
+.deepDiv{
+	background-color: transparent;
+	width:33.333%;
+	height:150%;
+	font-size:180%;
+	text-align:center;
+
+
+}
+
+#navText{
+	height:auto;
+	width:auto;
+	color: black;
+	position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color:white;
+    font-family: 'Acme', sans-serif;
+    font-size:110%;
+
+    
+}
+
+#intro{
+	background-color: transparent;
+	height:1010%;
+	display: flex;
+
+}
+
+#introImg{
+	height:auto;
+	background-color: cyan;
+	width:50%;
+	margin-left: 10%;
+	margin-top:40%;
+}
+
+#abtMe{
+	background-color: transparent;
+	height:1000%;
+}
+
+#hiIm{
+	height:16%;
+	width:70%;
+	background-color: transparent;
+	margin-top:auto;
+	margin-bottom:auto;
+	font-size: 600%;
+	margin-left: auto;
+	margin-right:auto;
+	color:white;
+	font-family: 'Sacramento', cursive;
+}
+
+a:hover{
+	border-radius: 100px;
+	background-color: white;
+	animation-name: don;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes don{
+	10%{
+		
+		color:red;
+	}
+	100%{
+		font-size:120%;
+		color:red;
+	}
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
