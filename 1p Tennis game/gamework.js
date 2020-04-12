@@ -10,6 +10,9 @@ var paddleRightY = 100;
 var paddleLeftHeight = 200;
 var paddleRightHeight = 200;
 
+var leftScore = 0;
+var rightScore = 0;
+
 window.onload = function(){
 	canvas = document.getElementById('gameCanvas');
 	canvasContext = canvas.getContext('2d');
@@ -50,6 +53,7 @@ function move(){
 		else{
 			
 			ballreset();
+			leftScore++;
 		}
 
 	}
@@ -57,12 +61,18 @@ function move(){
 	if (x<0){
 		if ((y > (paddleLeftY-paddleLeftHeight/2)) && (y < paddleLeftY+paddleLeftHeight/2)){
 			speed = -speed;
+
+
+			var temp  = y -(paddleLeftY+paddleLeftHeight/2); 
+			speedY = temp;
+
 		}
 
 		else{
 			// console.log(y);
 			// console.log("paddleLeft:" + paddleLeftY +"and total = " + paddleLeftHeight);
 			ballreset();
+			rightScore++;
 		}
 
 	}
@@ -89,7 +99,8 @@ function draw(){
 	//ball
 
 	drawCricle(x, y, 10,'red');
-
+	canvasContext.fillText(leftScore, 150, 150);
+	canvasContext.fillText(rightScore, 650, 500);
 
 
 	
