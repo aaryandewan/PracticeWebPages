@@ -13,7 +13,7 @@ var temps = new Array();
           errorFunction
         );
       }
-      //Get latitude and longitude;
+      //Gets latitude and longitude;
       function successFunction(position) {
         var lat = position.coords.latitude;
         var long = position.coords.longitude;
@@ -41,7 +41,6 @@ var temps = new Array();
             console.log('12');
             obj = data;
             for (var c = 0; c < 40; c++) {
-              //console.log(obj.list[c].main.feels_like);
               temps.push(obj.list[c].main.feels_like);
               clouds.push(obj.list[c].clouds.all);
               var date = obj.list[c].dt_txt;
@@ -56,14 +55,10 @@ var temps = new Array();
               $(".tempp").text(secondCallJson.main.feels_like + " C");
             })
             $(".city").text(obj.city.name);
-            // $(".tempp").text(obj.)
             draw("Temp for the next 5 days", temps, times, "myChart");
             draw("Cloudiness for the next 5 days", clouds, times, "myChart2");
 
-            // draw("Temp for the next 50 days", temps, times);
-            console.log(times);
-            // $("#icon").attr("src", ' http://openweathermap.org/img/wn/' + obj.weather[0].icon + '@2x.png');
-            // $("#demo").html("<h1>The local temperature is " + obj.main.feels_like);
+            console.log(times); //Just for experimental purposes
           });
       }
 
@@ -76,7 +71,7 @@ var temps = new Array();
         Chart.defaults.global.defaultFontColor = "white";
 
         let massPopChart = new Chart(myChart, {
-          type: "line", // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+          type: "line", // The graphs can be changed to bar, horizontalBar, pie, line, doughnut, radar, polarArea
           data: {
             labels: xaxis,
             datasets: [
@@ -84,16 +79,7 @@ var temps = new Array();
                 label: "Population",
                 data: yaxis,
                 backgroundColor: "white",
-                // backgroundColor:[
-                //   'rgba(255, 99, 132, 0.6)',
-                //   'rgba(54, 162, 235, 0.6)',
-                //   'rgba(255, 206, 86, 0.6)',
-                //   'rgba(75, 192, 192, 0.6)',
-                //   'rgba(153, 102, 255, 0.6)',
-                //   'rgba(255, 159, 64, 0.6)',
-                //   'rgba(255, 99, 132, 0.6)',
-
-                // ],
+                // backgroundColor:[ ],//Add an array of colors, that you want to give to each bar on the graph! 
                 borderWidth: 1,
                 borderColor: "#777",
                 hoverBorderWidth: 3,
