@@ -33,7 +33,7 @@ function both(){
 function computermove(){
 	if (paddleRightY > y){
 		paddleRightY-=2;
-	} 
+	}
 	else{
 		paddleRightY+=2;
 	}
@@ -46,12 +46,12 @@ function move(){
 	x+=speed;
 	y+=speedY;
 	if (x>canvas.width){
-		
+
 		if (y > (paddleRightY-paddleRightHeight/2) && y < paddleRightY+paddleRightHeight/2){
 			speed = -speed;
 		}
 		else{
-			
+
 			ballreset();
 			leftScore++;
 		}
@@ -63,8 +63,8 @@ function move(){
 			speed = -speed;
 
 
-			var temp  = y -(paddleLeftY+paddleLeftHeight/2); 
-			speedY = temp;
+			// var temp  = y -(paddleLeftY+paddleLeftHeight/2);
+			// speedY = temp;
 
 		}
 
@@ -93,8 +93,8 @@ function draw(){
 
 	drawfig(0, 0, canvas.width, canvas.height,'black');
 	drawfig(0, paddleLeftY-paddleLeftHeight/2, 10, paddleLeftHeight, 'white');
-	drawfig(790, paddleRightY-50, canvas.width, paddleRightHeight, 'blue');
-	//drawfig(x,100, 10,10, 'red');	
+	drawfig(790, paddleRightY-50, canvas.width, paddleRightHeight, 'white');
+	//drawfig(x,100, 10,10, 'red');
 
 	//ball
 
@@ -103,7 +103,7 @@ function draw(){
 	canvasContext.fillText(rightScore, 650, 500);
 
 
-	
+
 }
 
 
