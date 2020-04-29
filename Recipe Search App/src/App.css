@@ -1,0 +1,25 @@
+.App{
+  height:auto;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+input[type=text] {
+  width: 65%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  margin-left:14%;
+}
+button{
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.recipies{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
